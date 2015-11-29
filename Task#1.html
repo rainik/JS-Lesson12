@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src = "jquery-2.1.4.js"></script> <!-- 1 подключили JQuery -->
+   </head>
+   <body>
+      <p>Яблоко</p>
+      <p>Манго</p>
+      <p>Мандарин</p>
+      <ol>
+         <li>Помидор</li>
+         <li>Капуста</li>
+         <li>Лук</li>
+      </ol>
+      <script>
+         // Ваш код
+/*	1. Подключите jQuery;
+2. Напишите строку кода, которая делает текст Яблоко и Мандарин красного цвета;
+3. Напишите строку кода, которая делает текст Манго зеленого цвета;
+4. Напишите строку кода, которая делает текст Капуста и Лук синего цвета;
+5. Напишите строку кода, которая делает весь текст в списке (<ol>) курсивом.	 
+*/
+		//2 варианта 2 вопроса
+		 $("p:not(:eq(1))").css("color", "red");  //var 1
+		 $("p:first, p:last").css("color", "red"); //var 2
+		 //2 варианта 3 вопроса
+		 $("p:not(:even())").css("color", "green"); //var -1 
+		 $("p:odd()").css("color", "green"); //var - 2
+		 
+		 $("li:gt(0)").css("color", "blue"); // 4
+		 $("li").css("font-style", "italic"); //5
+      </script>
+   </body>
+</html>

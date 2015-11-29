@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src = "jquery-2.1.4.js"></script>
+   </head>
+   <body>
+      <p>Сложение</p>
+      <p>Вычитание</p>
+      <p>Умножение</p>
+      <p>Деление</p>
+      <script>
+         // Ваш код
+		 /*1. Подключите jQuery;
+		2. Напишите строку кода, которая выводит на экран количество абзацев;
+		3. Напишите код, который делает текст всех абзацев жирным при помощи метода each();
+		4. Напишите строку кода, которая делает текст первого абзаца синего цвета;
+		5. Напишите строку кода, которая делает текст третьего абзаца красного цвета.*/
+		alert($("p").length);
+		$("p").each(function (i, el) {
+						el.setAttribute("style", "font-weight: bold");
+					}	
+			);		
+		$("p").eq(0).css("color", "blue");
+		$("p").eq(2).css("color", "red");
+      </script>
+   </body>
+</html>

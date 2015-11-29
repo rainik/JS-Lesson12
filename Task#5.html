@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src = "jquery-2.1.4.js"></script>
+   </head>
+   <body>
+      <div><i>Понедельник</i></div>
+      <div><i>Вторник</i></div>
+      <div><i>Среда</i></div>
+      <div><i>Четверг</i></div>
+      <div><i>Пятница</i></div>
+      <div><b>Суббота</b></div>
+      <div><b>Воскресенье</b></div>
+      <script>
+         // Ваш код
+		 /*1. Подключите jQuery;
+		2. Напишите строку кода, которая выбирает все элементы <div> в переменную arrDiv;
+		3. Напишите строку кода, которая в переменной arrDiv ищет все элементы <i> и делает цвет их содержимого красным;
+		4. Напишите строку кода, которая в переменной arrDiv ищет все элементы <b> 
+		и делает цвет их содержимого синим.*/
+		var arrDiv = $("div");
+//		alert(arrDiv.length);
+		arrDiv.has("i").css("color", "red");
+		arrDiv.has("b").css("color", "blue");		
+      </script>
+   </body>
+</html>

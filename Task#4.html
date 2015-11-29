@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src = "jquery-2.1.4.js"></script>
+   </head>
+   <body>
+      <div>Огонь</div>
+      <div class="d"><p>Вода</p></div>
+      <div class="d">Воздух</div>
+      <div><p>Земля</p></div>
+      <script>
+         /* 1. Подключите jQuery;
+		2. Напишите строку кода, которая делает текст красного цвета в элементах <div>, которые относятся к классу "d";
+		3. Напишите строку кода, которая делает текст синего цвета в элементах <div>, которые не относятся к классу "d";
+		4. Напишите строку кода, которая делает текст жирным в двух последних элементах <div>;
+		5. Напишите строку кода, которая делает текст курсивом в элементах <div>, в которых есть вложенный элемент <p>.
+		*/
+		$("div").filter(".d").css("color", "red");
+		$("div").filter(":not(.d)").css("color", "blue");
+		var arrDiv = $("div");
+		arrDiv.slice(2, arrDiv.length).css("font-weight", "bold");
+		arrDiv.has("p").css("font-style", "italic");
+      </script>
+   </body>
+</html>

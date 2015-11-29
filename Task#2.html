@@ -1,0 +1,21 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <script src = "jquery-2.1.4.js"></script>
+   </head>
+   <body>
+      <form>
+         Логин: <input type="text" name="login" value="login"><br />
+         Пароль: <input type="text" name="pass" value="pass"><br />
+         <input type="button" value="Enter">
+      </form>
+      <script>
+			/*1. Подключите jQuery;
+			2. Напишите строку кода, которая делает значения в текстовых полях красного цвета;
+			3. Напишите строку кода, которая делает текст кнопки синего цвета.*/
+		  $("input:lt(2)").css("color", "red");
+		  $("input:button").css("color", "blue");
+      </script>
+   </body>
+</html>
